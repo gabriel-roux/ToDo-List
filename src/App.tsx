@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { Header } from './components/Header';
 import { Tasks } from './components/Tasks';
+
 import './globals.css';
 
 export interface TasksInterface {
@@ -52,7 +53,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div>
       <Header
         newTask={newTask}
         onChangeNewTaskInput={handleChangeNewTaskInput}

@@ -1,0 +1,129 @@
+
+.tasks {
+    display: flex;
+    flex: 1;
+    margin: 7.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tasks .tasksInformations {
+    display: flex;
+    flex: 1;
+    width: 45.9375rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasks .tasksInformations .createdTasks {
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: var(--blue-400);
+}
+
+.tasks .tasksInformations .createdTasks > span {
+    color: var(--gray-100);
+    display: inline-block;
+    text-align: center;
+    border-radius: 35px;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    padding-top: 0.15rem;
+    width: 1.5rem;
+    height: 1.25rem;
+    background-color: var(--gray-400);
+}
+
+.tasks .tasksInformations .completedTasks {
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: var(--purple-400);
+}
+
+.tasks .tasksInformations .completedTasks > span {
+    color: var(--gray-100);
+    display: inline-block;
+    text-align: center;
+    border-radius: 35px;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    padding-top: 0.15rem;
+    width: 3.25rem;
+    height: 1.25rem;
+    background-color: var(--gray-400);
+}
+
+.tasks .toDoList {
+    margin-top: 1.5rem;
+    max-width: 45.9375rem;
+}
+
+.tasks .toDoList .task {
+    height: 4.5rem;
+    width: 45.9375rem;
+    border-radius: 8px;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    margin-bottom: 1.05rem;
+}
+
+.tasks .toDoList .task .content {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tasks .toDoList .task .content input[type=checkbox] {
+    background: transparent;
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    border: 1px solid var(--blue-400);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.tasks .toDoList .task .content input[type=checkbox]:checked {
+    background: var(--purple-700);
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    border: 1.5px solid var(--purple-700);
+}
+
+.tasks .toDoList .task .content input[type=checkbox]:checked::before {
+    content: '\2713';
+    font-size: 0.875rem;
+    color: var(--gray-100);
+    position: absolute;
+    margin: 0.1rem 0.3rem;
+}
+
+.tasks .toDoList .task .content .completedTask {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.tasks .toDoList .task .content button {
+    background: transparent;
+    color: var(--gray-300);
+    padding: 0.25rem;
+    line-height: 0;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.tasks .toDoList .task .content button:hover {
+    color: var(--danger);
+    background: var(--gray-400);
+}
+
+.tasks .toDoList .task .content p {
+    font-size: 0.875rem;
+}

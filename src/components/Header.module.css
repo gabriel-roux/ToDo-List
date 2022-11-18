@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 12.5rem;
+    gap: 1.25rem;
+    background: var(--gray-700);
+}
+
+.header .addNewTaskForm {
+    margin-top: 1.575rem;
+}
+
+.header .addNewTaskForm input {
+    width: 40.625rem;
+    height: 3.375rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    padding: 1rem;
+    background: var(--gray-500);
+    border-radius: 8px;
+    color: var(--gray-100);
+    transition: border 0.2s;
+}
+
+.header .addNewTaskForm input:focus {
+    border: 1px solid var(--purple-700);
+}
+
+.header .addNewTaskForm button[type=submit]{
+    margin: 0.5rem;
+    width: 5.625rem;
+    height: 3.375rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: var(--gray-100);
+    font-weight: bold;
+    border: 0;
+    background: var(--blue-700);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.header .addNewTaskForm button[type=submit]:not(:disabled):hover {
+    background: var(--blue-400);
+}
+
+.header .addNewTaskForm button[type=submit]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
+.header .addNewTaskForm button > svg {
+    display: inline-block;
+    margin-bottom: -4px;
+}
